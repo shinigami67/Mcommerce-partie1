@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "OC - microcommerce",
+		"_postman_id": "bf33043e-9080-6edc-dd64-66db55a2e912",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/Produits",
+			"request": {
+				"url": "http://localhost:9090/Produits",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 5,\n        \"nom\": \"test\",\n        \"prix\": 0,\n        \"prixAchat\": 200\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:9090/Produits/Tri\n\n",
+			"request": {
+				"url": " http://localhost:9090/Produits/Tri\n\n",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:9090/AdminProduits\n\n",
+			"request": {
+				"url": " http://localhost:9090/AdminProduits\n\n",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
