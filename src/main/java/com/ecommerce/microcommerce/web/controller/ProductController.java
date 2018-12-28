@@ -109,6 +109,11 @@ public class ProductController {
         return resultat;
     }
 
+    //Récupérer les produits triés par nom
+    @GetMapping(value = "/Produits/Tri")
+    public List<Product> trierProduitsParOrdreAlphabetique (){
+        return productDao.OrderByNomAsc();
+    }
 
     //Pour les tests
     @GetMapping(value = "test/produits/{prix}")
